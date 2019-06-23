@@ -5,3 +5,4 @@ html    = urlopen("http://pythonscraping.com/pages/page1.html")
 bsObj   = BeautifulSoup(html.read(),'html.parser')  
 
 print(bsObj.html)
+print(bsObj.nonExistentTag)
