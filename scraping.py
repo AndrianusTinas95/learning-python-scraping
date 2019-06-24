@@ -3,11 +3,6 @@ from urllib.error import HTTPError
 from bs4 import BeautifulSoup
 
 class Sraping :
-    def __init__(self,url):
-        self.__url = url
-
-    def tes(self):
-        print('tes ok')
 
     @property
     def scriptData(self):
@@ -27,6 +22,10 @@ class Sraping :
         return self.__data
 
 
-html = Sraping('http://pythonscraping.com/pages/page1.html')
-print(html.scriptData)
-# print(html.__dict__)
+html = Sraping()
+
+html.scriptData = "https://www.tokopedia.com/kolling/garskin-laptop-art-hitam-orange-skin-laptop-stiker-laptop?src=topads"
+
+data    = html.scriptData
+search  = data.findAll(text="Terkirim")
+print(len(search))
