@@ -6,7 +6,7 @@ class Scraping :
 
     def __init__(self,url) :
         self.__url = url
-        print('you are scraper ? ')
+        # print('you are scraper ? ')
 
     @property
     def url(self) :
