@@ -17,6 +17,7 @@ def get_twitter_auth():
     return auth
 
 def get_twitter_client():
-    auth    = get_twitter_auth()
-    client  = API(auth)
-    return client
+    pass
+    # auth    = get_twitter_auth()
+    # client  = API(auth)
+    # return client
